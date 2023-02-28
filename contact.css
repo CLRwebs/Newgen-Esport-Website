@@ -1,0 +1,64 @@
+.item4 {
+    border-bottom: 2px solid white;
+    padding-bottom: .3rem;
+}
+
+.item1 {
+    border-bottom: 0px;
+}
+
+.item2 {
+    border-bottom: 0px;
+}
+
+.item3 {
+    border-bottom: 0px;
+}
+
+
+.header {
+    position: static;
+}
+
+body {
+    background-image: url('./Images/contacthatter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    min-height: 100vh;
+    padding-inline: 20vw;
+    font-size: clamp(1.25rem, 3vw, 3vw);
+    font-family: Helvetica, sans-serif;
+}
+
+section p span:first-of-type {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+
+    section {
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 50vw;
+        padding-top: 0;
+    }
+
+    .business-email {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}

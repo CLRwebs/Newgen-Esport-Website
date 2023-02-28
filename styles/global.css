@@ -1,0 +1,60 @@
+/* Fejléc Formázása */
+
+
+.header-links-sm {
+  visibility: hidden;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.2s ease-in;
+}
+
+.open {
+  visibility: visible;
+  height: 10rem;
+  transition: all 0.2s ease-out;
+}
+
+.header-links-sm .header-item {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hamburger {
+  color: white;
+  font-size: 3rem;
+  display: hidden;
+  cursor: pointer;
+}
+
+.checkbtn {
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Fejléc formázás vége*/
+
+
+@media screen and (max-width: 1000px) {
+  .header-links {
+    display: none;
+    gap: 3rem;
+  }
+
+  .header-links .header-item {
+    display: none;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+
+}

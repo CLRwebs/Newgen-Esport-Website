@@ -1,0 +1,60 @@
+/* Header Formázása */
+
+.item3 {
+    border-bottom: 2px solid white;
+    padding-bottom: .3rem;
+}
+
+.item1 {
+    border-bottom: 0px;
+}
+
+.item2 {
+    border-bottom: 0px;
+}
+
+.item4 {
+    border-bottom: 0px;
+}
+
+.header {
+    background-image: url('./Images/businesshatter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background: rgba(117, 117, 117, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(84, 84, 84, 0.3);
+
+}
+
+/* Header Formázás vége*/
+
+.business {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url('./Images/businesshatter2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: clamp(7rem, 7vw, 7vw);
+    height: fit-content;
+    padding-inline: 20vw;
+    padding-top: 30vw;
+    padding-bottom: 10vw;
+    font-family: Helvetica, sans-serif;
+}
+
+.business-title {
+    font-size: clamp(2rem, 3vw, 3vw);
+    font-size: Helvetica, Arial;
+    font-size: Arial;
+}
+
+.business-box p {
+    font-size: clamp(1.2rem, 1.2vw, 1.2vw);
+}
