@@ -14,3 +14,68 @@
 .item4 {
     border-bottom: 0px;
 }
+
+.header {
+    position: static;
+}
+
+body {
+    background-image: url('./Images/naptar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.naptar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.day {
+    width: clamp(2.5rem, 10vw, 10vw);
+    color: white;
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    padding-right: 1rem;
+    font-size: clamp(7px, 1vw, 1vw);
+}
+
+.hetfo-sor {
+    border: 1px solid white;
+    border-width: 2px;
+    border-collapse: collapse;
+    width: clamp(2.5rem, 10vw, 10vw);
+    height: clamp(6rem, 6.5vw, 6.5vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: clamp(7px, 1vw, 1vw);
+}
+
+.border-left-none {
+    border-left: none;
+}
+
+.border-right-none {
+    border-right: none;
+}
+
+.hetfo-sor span:last-of-type {
+    color: cyan;
+}

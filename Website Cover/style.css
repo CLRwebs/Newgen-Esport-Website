@@ -1,0 +1,174 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('./Images/header.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(5rem, 5vh, 5vh);
+    padding-bottom: 5vh;
+}
+
+
+
+.white {
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: fit-content;
+
+    padding-top: 1rem;
+}
+
+.logo {
+    width: 4vw;
+    height: 4vw;
+    margin: auto;
+}
+
+.logo-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    top: 1rem;
+    left: 15%;
+
+}
+
+.logotext {
+    width: 10vw;
+}
+
+.youtube,
+.twitter,
+.twitch,
+.facebook,
+.discord {
+    width: 4vw;
+    height: 4vw;
+    transition: all 500ms ease;
+}
+
+.youtube:hover,
+.twitter:hover,
+.facebook:hover,
+.twitch:hover,
+.discord:hover {
+    transform: scale(120%);
+    transition: all 500ms ease;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 50vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(27rem, 60vw, 60vw);
+    text-align: left;
+    min-height: fit-content;
+    gap: clamp(2rem, 2vw, 2vw);
+}
+
+h1 {
+    font-size: clamp(3rem, 3vw, 3vw);
+    color: white;
+    padding-inline: 10vw;
+}
+
+p {
+    font-size: clamp(1rem, 1.25vw, 1.25vw);
+    line-height: clamp(1.75rem, 1.75vw, 1.75vw);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    padding-inline: 10vw;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .youtube,
+    .twitter,
+    .twitch,
+    .facebook,
+    .discord {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .logo {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .logotext {
+        width: 16vw;
+    }
+
+    .logo-box {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        margin-left: 0;
+        padding-top: 5rem;
+        font-size: 5vw;
+        margin-top: -5rem;
+    }
+
+    .social {
+        display: block;
+        margin-right: 5vw;
+    }
+
+    .header {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+
+    .youtube,
+    .twitter,
+    .twitch,
+    .facebook,
+    .discord {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logotext {
+        width: 10rem;
+    }
+
+    .logo-box {
+        margin-left: -10%;
+    }
+
+}

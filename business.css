@@ -29,7 +29,6 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-bottom: 1px solid rgba(84, 84, 84, 0.3);
-
 }
 
 /* Header Formázás vége*/
@@ -53,6 +52,10 @@
     font-size: clamp(2rem, 3vw, 3vw);
     font-size: Helvetica, Arial;
     font-size: Arial;
+}
+
+p a {
+    font-size: clamp(1.4rem, 2vw, 2vw);
 }
 
 .business-box p {

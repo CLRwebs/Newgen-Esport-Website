@@ -24,34 +24,93 @@ body {
     background-image: url('./Images/contacthatter.png');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
-section {
+.business {
+    padding-inline: 10vw;
+    padding-block: 10vw;
     display: flex;
     align-items: center;
-    color: white;
-    background-size: cover;
-    min-height: 100vh;
-    padding-inline: 20vw;
-    font-size: clamp(1.25rem, 3vw, 3vw);
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    gap: 2rem;
     font-family: Helvetica, sans-serif;
+    overflow-y: hidden;
 }
 
-section p span:first-of-type {
-    font-weight: bold;
+.business span {
+    font-size: clamp(2rem, 2vw, 2vw);
+    color: white;
+}
+
+.business-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: clamp(20rem, 40vw, 40vw);
+
+}
+
+.business-form input[type="email"],
+textarea {
+    max-width: clamp(20rem, 40vw, 40vw);
+    padding-inline: clamp(1.2rem, 1.2vw, 1.2vw);
+    padding-block: clamp(1rem, 1vw, 1vw);
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: clamp(1.2rem, 1.2vw, 1.2vw);
+    color: white;
+}
+
+.business-form input[type="email"]:focus,
+textarea:focus {
+    outline: 3px solid rgb(255, 0, 179);
+    border: none;
+    box-shadow: 0px 0px 8px 1px white;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: white;
+}
+
+
+button[type="submit"] {
+    width: 50%;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: clamp(1.2rem, 1.2vw, 1.2vw);
+    outline: 3px solid white;
 }
 
 @media screen and (max-width: 800px) {
 
-    section {
-        padding: 0;
-        text-align: center;
+    html,
+    body {
+        overflow-y: hidden;
+    }
+
+    .business-form {
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding-bottom: 50vw;
-        padding-top: 0;
+        align-items: center;
+    }
+
+    .business-form input {
+        width: 100%;
+    }
+
+    .business span {
+        text-align: center;
     }
 
     .business-email {
@@ -61,4 +120,6 @@ section p span:first-of-type {
         justify-content: center;
         font-size: 1.5rem;
     }
+
+
 }
